@@ -7,7 +7,7 @@ Definition of function that will convert pdf to booklet. Then modify papersize
 #eeee test
 
 
- eeee () {  pdfjam --booklet 'true' --landscape --suffix book --papersize '{11in,17in}'  -- test.pdf}
+ eeee () {  pdfjam --booklet 'true' --landscape --suffix book --papersize '{11in,17in}'  -- $1.pdf;}
 
 #pdfbook  test.pdf  1,4-5,9-11,31,31
 
