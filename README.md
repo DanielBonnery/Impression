@@ -1,9 +1,12 @@
 # Impression
-Bash commands for printing
+Bash commands for printing + latex code to create seyes lines.
 
-Definition of function that will convert pdf to booklet. Then modify papersize
+
+
+## Bash code - Definition of function that will convert pdf to booklet. Then modify papersize
+
 ```
- eeee () {  pdfbook $1.pdf;gs  -o $1.pdf  -sDEVICE=pdfwrite  -sPAPERSIZE=11x17  -dFIXEDMEDIA  -dPDFFitPage  -dCompatibilityLevel=1.4   $1-book.pdf; rm $1-book.pdf; }
+eeee () {  pdfbook $1.pdf;gs  -o $1.pdf  -sDEVICE=pdfwrite  -sPAPERSIZE=11x17  -dFIXEDMEDIA  -dPDFFitPage  -dCompatibilityLevel=1.4   $1-book.pdf; rm $1-book.pdf; }
 #eeee test
 
 
@@ -12,6 +15,4 @@ Definition of function that will convert pdf to booklet. Then modify papersize
 #pdfbook  test.pdf  1,4-5,9-11,31,31
 
 #gs  -o output.pdf  -sDEVICE=pdfwrite  -sPAPERSIZE=11x17  -dFIXEDMEDIA  -dPDFFitPage  -dCompatibilityLevel=1.4   test-1\,4-5\,9-11\,31\,31-book.pdf
-
-
 ```
